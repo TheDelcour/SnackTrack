@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aau.student.meab220.snacktrack.MainActivity"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/button_favorites"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="91dp"
+        android:background="@drawable/button_main_screen"
+        android:drawableTop="@mipmap/button_favorite"
+        android:onClick="on_click_fav"
+        android:text="@string/Favorites"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="29dp" />
+
+    <Button
+        android:id="@+id/button_baked"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="91dp"
+        android:background="@drawable/button_main_screen"
+        android:drawableTop="@mipmap/button_baked"
+        android:onClick="on_click_baked"
+        android:text="@string/Baked"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/button_favorites"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="29dp" />
+
+    <Button
+        android:id="@+id/button_nuts"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_main_screen"
+        android:drawableTop="@mipmap/button_nuts"
+        android:onClick="on_click_nuts"
+        android:text="@string/Nuts"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sweets"
+        android:layout_marginEnd="29dp" />
+
+    <Button
+        android:id="@+id/button_drink"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_main_screen"
+        android:drawableTop="@mipmap/button_drink"
+        android:onClick="on_click_drink"
+        android:text="@string/Drink"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_favorites"
+        android:layout_marginStart="29dp" />
+
+    <Button
+        android:id="@+id/button_fastfood"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_main_screen"
+        android:drawableTop="@mipmap/button_fastfood"
+        android:onClick="on_click_fastfood"
+        android:text="@string/Fastfood"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/button_drink"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_baked"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="29dp" />
+
+    <Button
+        android:id="@+id/button_sweets"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_main_screen"
+        android:drawableTop="@mipmap/button_sweets"
+        android:onClick="on_click_sweets"
+        android:text="@string/Sweets"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/button_fruit"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_fastfood"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="29dp" />
+
+    <Button
+        android:id="@+id/button_fruit"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_main_screen"
+        android:drawableTop="@mipmap/button_fruit"
+        android:onClick="on_click_fruit"
+        android:text="@string/Fruit"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_drink"
+        android:layout_marginStart="29dp" />
+
+    <Button
+        android:id="@+id/button_vegetables"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_main_screen"
+        android:drawableTop="@mipmap/button_vegetables"
+        android:onClick="on_click_vegetables"
+        android:text="@string/Vegetables"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_fruit"
+        android:layout_marginStart="29dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="397dp"
+        android:layout_height="118dp"
+        app:srcCompat="@mipmap/text_snack_screen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
