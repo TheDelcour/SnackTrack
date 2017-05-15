@@ -5,7 +5,8 @@ import android.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.aau.student.meab220.snacktrack.Snack.DrawFromProcessing;
+import com.aau.student.meab220.snacktrack.Snack.ProcessingBarChart;
+import com.aau.student.meab220.snacktrack.Snack.ProcessingCaloriesXTimeChart;
 
 public class TrackScreen extends AppCompatActivity {
 
@@ -14,9 +15,11 @@ public class TrackScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track_screen);
         FragmentManager fragmentManager = getFragmentManager();
-        Fragment fragment = new DrawFromProcessing();
+        Fragment fragment = new ProcessingCaloriesXTimeChart();
+        Fragment fragment1 = new ProcessingBarChart();
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
+                .replace(R.id.container1, fragment1)
                 .commit();
     }
 }

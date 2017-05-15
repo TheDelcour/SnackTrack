@@ -2,6 +2,8 @@ package com.aau.student.meab220.snacktrack.Snack;
 
 import android.os.Environment;
 
+import com.aau.student.meab220.snacktrack.SnackSubCategory;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -13,7 +15,7 @@ import java.util.Date;
 import java.util.TimeZone;
 
 /**
- * Created by Tobia on 09-05-2017.
+ * Created by Tobias on 09-05-2017.
  */
 
 public class SaveDataInputToCSV {
@@ -29,7 +31,7 @@ public class SaveDataInputToCSV {
         String dateToStr = formatDate.format(curDate);
         Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("GMT+1:00"));
         Date currentLocalTime = cal.getTime();
-        DateFormat date = new SimpleDateFormat("HH:mm:ss");
+        DateFormat date = new SimpleDateFormat("HHmm");
         date.setTimeZone(TimeZone.getTimeZone("GMT+1:00"));
 
         String localTime = date.format(currentLocalTime);
@@ -43,13 +45,15 @@ public class SaveDataInputToCSV {
                 FileOutputStream fileOutputStream = new FileOutputStream(file, true);
                 fileOutputStream.write(typeOfSnack.getBytes());
                 fileOutputStream.write(",".getBytes());
+                fileOutputStream.write(localTime.getBytes());
+                fileOutputStream.write(",".getBytes());
                 fileOutputStream.write(calories.getBytes());
                 fileOutputStream.write(",".getBytes());
                 fileOutputStream.write(amount.getBytes());
                 fileOutputStream.write(",".getBytes());
                 fileOutputStream.write(dateToStr.getBytes());
                 fileOutputStream.write(",".getBytes());
-                fileOutputStream.write(localTime.getBytes());
+                fileOutputStream.write(SnackSubCategory.getSnackScreenChosen().getBytes());
                 fileOutputStream.write("\r\n".getBytes());
                 fileOutputStream.flush();
                 fileOutputStream.close();

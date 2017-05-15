@@ -26,6 +26,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
     LinearLayout linearLayout;
     Button[] button;
     View.OnClickListener listener;
+
     private static String snackScreenChosen;
     private static String button_name;
 
@@ -2548,6 +2549,9 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
 
     public static void setSnackScreenChosen(String snackScreenChosen) {
         SnackSubCategory.snackScreenChosen = snackScreenChosen;
+    }
+    public static String getSnackScreenChosen() {
+        return snackScreenChosen;
     }
 
     public static String getButton_name() {
