@@ -70,9 +70,6 @@ for(int i=0;i<data.length;i++){
         average = sum/calories.length;
         float[] averageCal = new float[]{average,average};
         float[] timeCal = new float[]{minTime,maxTime};
-        System.out.println(averageCal[0]);
-        System.out.println(average);
-        System.out.println(timeCal);
 
 //Setting the data
         calorieChart.setData(time,calories);

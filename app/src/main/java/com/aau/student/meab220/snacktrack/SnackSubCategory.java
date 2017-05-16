@@ -42,7 +42,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
         if(snackScreenChosen=="favorites") {
             linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
 
-            File file = new File(Environment.getExternalStorageDirectory().getAbsoluteFile(), "test2.csv");
+            File file = new File(Environment.getExternalStorageDirectory().getAbsoluteFile(), "SnackTrackFavorites.csv");
             FileInputStream inputStream = null;
             try {
                 inputStream = new FileInputStream(file);
@@ -71,7 +71,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
         if(snackScreenChosen=="drink") {
             linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
 
-            String[] array = {"Apple juice", "Beer", "Carbonated water", "Carrot juice", "Champagne", "Coffee(instant)", "Coffee(Regular)", "Liquor", "Milk", "Milkshake", "Orange juice", "Pineapple juiice", "Protein shake", "Protein shake(Diet)",
+            String[] array = {"Apple juice", "Beer", "Carbonated water", "Carrot juice", "Champagne", "Coffee(instant)", "Coffee(Regular)", "Liquor", "Milk", "Milkshake", "Orange juice", "Pineapple juice", "Protein shake", "Protein shake(Diet)",
                     "Protein shake(Recovery)", "Red wine", "Soft drink with sugar", "Soft drink without sugar", "Tea", "Water", "White wine"};
 
             int length = array.length;
@@ -92,7 +92,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
         if(snackScreenChosen=="baked") {
             linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
 
-            String[] array = {"Wholemeal Digestive", "Oatmeal", "Rye", "Coarse grain roll", "White roll", "Ryebread", "Cake", "Crisped bread", "White bread", "Wholemeal bread", "Biscuit", "Wheat bread(with sunflower kernels)", "Danish pastry", "Sausage rolls"};
+            String[] array = {"Wholemeal Digestive", "Oatmeal", "Coarse grain roll", "White roll", "Ryebread", "Cake", "Crispbread", "White bread", "Wholemeal bread", "Biscuit", "Wheat bread(with sunflower kernels)", "Danish pastry", "Sausage rolls"};
 
             int length = array.length;
             button = new Button[length];
@@ -112,7 +112,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
         if(snackScreenChosen=="fastfood") {
             linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
 
-            String[] array = {"BIG KING(Burger King)", "Big Mac(McDonalds)", "Cheeseburger", "Chicken nuggets(4 piece)", "Chili Cheese Tops(McDonalds)", "Crispy Chicken(Burger King)", "Dipsauce",
+            String[] array = {"BIG KING(Burger King)", "Big Mac(McDonalds)", "Cheeseburger", "Chicken nuggets", "Chili Cheese Tops(McDonalds)", "Crispy Chicken(Burger King)", "Dipsauce",
                     "Fried spring roll", "Frozen pizza", "Hamburger", "McBacon(McDonalds)", "McChicken(McDonalds)", "McFeast(McDonalds)", "McFlurry(McDonalds)", "Fries", "Milkshake", "Pizza", "Quarter Pounder(McDonalds)",
                     "Steakhouse(Burger King)", "Whopper(Burger King)", "X-Long Hot Chili Cheese(Burger King)"};
 
@@ -136,7 +136,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
 
             String[] array =  {"Apple", "Apricot", "Apricot(dried)", "Avocado", "Banana", "Blackberry", "Blackcurrant", "Blueberry", "Cantaloupe", "Carembola", "Cherimoya", "Cherry", "Clementine", "Fig", "Fig(dried)",
                     "Cowberry", "Cranberry", "Redcurrant berry", "Date(dried)", "Durian", "Elderberry", "Goji berry(dried)", "Gooseberry", "Grape", "Grapefruit", "Ground cherry", "Honey melon", "Kaki", "Kiwi", "Kumquat", "Lemon", "Lime",
-                    "Mango", "Mango(dried)", "Nectarine", "Olives(black)", "Olives(green)", "Orange", "Papaya", "Passion fruit", "Peaches", "Pear", "Pineapple", "Plums", "Pomegranate", "Prune", " Quince", "Raisin", "Raspberry", "Rose hip",
+                    "Mango", "Mango(dried)", "Nectarine", "Olives(black)", "Olives(green)", "Orange", "Papaya", "Passion fruit", "Peaches", "Pear", "Pineapple", "Plum", "Pomegranate", "Prune", "Quince", "Raisin", "Raspberry", "Rose hip",
                     "Sea buckthorn", "Strawberry", "Tangerine", "Watermelon"};
 
             int length = array.length;
@@ -158,7 +158,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
         if(snackScreenChosen=="sweets") {
             linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
 
-            String[] array = {"Haribo candy", "Pingvin blanding(Toms)", "Familie Guf(Malaco)", "Cake", "Chocolate", "Chocolate bisquit", "Chips", "Coarse chips", "Gum(with sugar)", "Marcipan with chocolate", "Liqorice", " Toffee", "Ice cream",
+            String[] array = {"Haribo candy", "Pingvin blanding(Toms)", "Familie Guf(Malaco)", "Chocolate", "Chocolate biscuit", "Chips", "Coarse chips", "Gum(with sugar)", "Marcipan with chocolate", "Liquorice", "Toffee", "Ice cream",
                     "Ice cream(Vanilla cone)", "Floedeboller", "Nougat", "Nutella", "Hard candy",};
 
             int length = array.length;
@@ -179,7 +179,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
         if(snackScreenChosen=="vegetables") {
             linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
 
-            String[] array = {"Potato", "Carrot", "Broccoli", "Rhubarb", "Iceberg, lettuce", "Spinach", "Pepper(red)", "Pepper(green)", "Tomato", "Cucumber"};
+            String[] array = {"Potato", "Carrot", "Broccoli", "Rhubarb", "Iceberg(lettuce)", "Spinach", "Pepper(red)", "Pepper(green)", "Tomato", "Cucumber"};
 
             int length = array.length;
             button = new Button[length];
@@ -560,7 +560,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Coffee(regular)":
+                case "Coffee(Regular)":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -650,7 +650,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Protein shake(diet)":
+                case "Protein shake(Recovery)":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -695,7 +695,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Soft drinks with sugar":
+                case "Soft drink with sugar":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -710,7 +710,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Soft drinks without sugar":
+                case "Soft drink without sugar":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -814,7 +814,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Chicken nuggets(4 pieces)":
+                case "Chicken nuggets":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -829,7 +829,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Chili Cheese tops(McDonalds)":
+                case "Chili Cheese Tops(McDonalds)":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -979,7 +979,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Medium fries":
+                case "Fries":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1098,7 +1098,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Pingvin Blanding(Toms)":
+                case "Pingvin blanding(Toms)":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1143,7 +1143,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Chocolate bisquits":
+                case "Chocolate biscuits":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1188,7 +1188,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Gum with sugar":
+                case "Gum(with sugar)":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1218,7 +1218,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Licorice":
+                case "Liquorice":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1447,7 +1447,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
 
                     break;
 
-                case "Green pepper":
+                case "Pepper(red)":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1463,7 +1463,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
 
                     break;
 
-                case "Red pepper":
+                case "Pepper(green)":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1525,6 +1525,21 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
+                case "Danish pastry":
+                    if(pref.contains(button_tag)){
+                    }
+                    else{
+                        editor.putString(button_tag, "consists");
+                        editor.apply();
+                        SaveFavoriteToCSV.setButton_name(button_tag);
+                        SaveFavoriteToCSV.writeExternalStorage();
+                    }
+                    SaveDataInputToCSV.setTypeOfSnack(button_tag);
+                    SaveDataInputToCSV.setCalories("374");
+                    SaveDataInputToCSV.setAmount("100 gr");
+                    SaveDataInputToCSV.writeExternalStorage();
+                    break;
+
 
                 case "Oatmeal":
                     if(pref.contains(button_tag)){
@@ -1558,7 +1573,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     break;
 
 
-                case "Coarse Grain Roll":
+                case "Coarse grain roll":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1574,7 +1589,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     break;
 
 
-                case "White rolle":
+                case "White roll":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1622,7 +1637,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     break;
 
 
-                case "Crispedbread":
+                case "Crispbread":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1686,7 +1701,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     break;
 
 
-                case "Wheat bread(with sunflower seeds)":
+                case "Wheat bread(with sunflower kernels)":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1763,7 +1778,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Apricot (dried)":
+                case "Apricot(dried)":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -1823,7 +1838,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Blackcurrent":
+                case "Blackcurrant":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -2122,7 +2137,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Honeymelon":
+                case "Honey melon":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -2302,7 +2317,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Papya":
+                case "Papaya":
                     if(pref.contains(button_tag)){
                     }
                     else{
@@ -2377,7 +2392,7 @@ public class SnackSubCategory extends AppCompatActivity implements View.OnClickL
                     SaveDataInputToCSV.writeExternalStorage();
                     break;
 
-                case "Plums":
+                case "Plum":
                     if(pref.contains(button_tag)){
                     }
                     else{

@@ -21,7 +21,7 @@ public class SaveFavoriteToCSV {
         if(Environment.MEDIA_MOUNTED.equals(state)){
 
 
-            File file = new File(Environment.getExternalStorageDirectory().getAbsoluteFile(), "test2.csv");
+            File file = new File(Environment.getExternalStorageDirectory().getAbsoluteFile(), "SnackTrackFavorites.csv");
             String Message = button_name;
 
             try {
